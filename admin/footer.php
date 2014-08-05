@@ -1,0 +1,1 @@
+<div id="footer"><div class="container">Copyright &copy; 2014 Genius Technology</div></div>

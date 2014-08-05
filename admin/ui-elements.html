@@ -1,0 +1,878 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>UI Elements | Slate Admin 2.0</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!-- Styles -->
+<link href="./css/bootstrap.css" rel="stylesheet">
+<link href="./css/bootstrap-responsive.css" rel="stylesheet">
+<link href="./css/bootstrap-overrides.css" rel="stylesheet">
+
+<link href="./css/ui-lightness/jquery-ui-1.8.21.custom.css" rel="stylesheet">
+<link href="./js/plugins/msgGrowl/css/msgGrowl.css" rel="stylesheet">
+<link href="./js/plugins/msgAlert/css/msgAlert.css" rel="stylesheet">
+<link href="./js/plugins/timepicker/jquery.ui.timepicker.css" rel="stylesheet"> 
+<link href="./js/plugins/lightbox/themes/evolution-dark/jquery.lightbox.css" rel="stylesheet">  
+<link href="./js/plugins/colorpicker/css/colorpicker.css" rel="stylesheet">
+
+<link href="./css/slate.css" rel="stylesheet">
+<link href="./css/slate-responsive.css" rel="stylesheet">  
+
+<link href="./css/pages/ui-elements.css" rel="stylesheet">
+
+
+<!-- Javascript -->
+<script src="./js/jquery-1.7.2.min.js"></script>
+<script src="./js/jquery-ui-1.8.21.custom.min.js"></script>
+<script src="./js/jquery.ui.touch-punch.min.js"></script>
+<script src="./js/bootstrap.js"></script>
+
+<script src="./js/plugins/msgGrowl/js/msgGrowl.js"></script>
+<script src="./js/plugins/msgAlert/js/msgAlert.js"></script>
+<script src="./js/plugins/timepicker/jquery.ui.timepicker.min.js"></script>
+<script src="./js/plugins/colorpicker/js/bootstrap-colorpicker.js"></script>
+<script src="./js/plugins/lightbox/jquery.lightbox.js"></script>
+
+<script src="./js/Slate.js"></script>
+
+<script src="./js/demos/demo.ui-elements.js"></script>
+
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    
+    
+  </head>
+
+  <body>
+ 	
+  	
+<div id="header">
+	
+	<div class="container">			
+		
+		<h1><a href="./">Slate Admin 2.0</a></h1>			
+		
+		<div id="info">				
+			
+			<a href="javascript:;" id="info-trigger">
+				<i class="icon-cog"></i>
+			</a>
+			
+			<div id="info-menu">
+				
+				<div class="info-details">
+				
+					<h4>Welcome back, John D.</h4>
+					
+					<p>
+						Logged in as Admin.
+						<br>
+						You have <a href="javascript:;">5 messages.</a>
+					</p>
+					
+				</div> <!-- /.info-details -->
+				
+				<div class="info-avatar">
+					
+					<img src="./img/avatar.jpg" alt="avatar">
+					
+				</div> <!-- /.info-avatar -->
+				
+			</div> <!-- /#info-menu -->
+			
+		</div> <!-- /#info -->
+		
+	</div> <!-- /.container -->
+
+</div> <!-- /#header -->
+
+
+<div id="nav">
+		
+	<div class="container">
+		
+		<a href="javascript:;" class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        	<i class="icon-reorder"></i>
+      	</a>
+		
+		<div class="nav-collapse">
+			
+			<ul class="nav">
+		
+				<li class="nav-icon">
+					<a href="./">
+						<i class="icon-home"></i>
+						<span>Home</span>
+					</a>	    				
+				</li>
+				
+				<li class="dropdown active">					
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-th"></i>
+						Components
+						<b class="caret"></b>
+					</a>	
+				
+					<ul class="dropdown-menu">
+						<li><a href="./forms.html">Forms</a></li>
+						<li><a href="./ui-elements.html">UI Elements</a></li>
+						<li><a href="./grid.html">Grid Layout</a></li>
+						<li><a href="./tables.html">Tables</a></li>
+						<li><a href="./widgets.html">Widget Boxes</a></li>
+						<li><a href="./charts.html">Charts</a></li>
+						<li><a href="./tabs.html">Tabs & Accordion</a></li>
+						<li><a href="./buttons.html">Buttons</a></li>
+					</ul>    				
+				</li>
+				
+				<li class="dropdown">					
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-copy"></i>
+						Sample Pages
+						<b class="caret"></b>
+					</a>	
+				
+					<ul class="dropdown-menu">
+						<li><a href="./invoice.html">Invoice</a></li>
+						<li><a href="./faq.html">FAQ</a></li>
+						<li><a href="./pricing.html">Pricing Plans</a></li>
+						<li><a href="./gallery.html">Image Gallery</a></li>
+						<li><a href="./wizard.html">Wizard</a></li>
+						<li><a href="./reports.html">Reports</a></li>
+						<li><a href="./calendar.html">Calendar</a></li>
+					</ul>    				
+				</li>
+				
+				<li class="dropdown">					
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-external-link"></i>
+						Other Pages
+						<b class="caret"></b>
+					</a>	
+				
+					<ul class="dropdown-menu">							
+						<li><a href="./login.html">Login</a></li>
+						<li><a href="./signup.html">Signup</a></li>
+						<li><a href="./error.html">Error</a></li>
+						<li class="dropdown">
+							<a href="javascript:;">
+								Dropdown Menu									
+								<i class="icon-chevron-right sub-menu-caret"></i>
+							</a>
+							
+							<ul class="dropdown-menu sub-menu">
+		                        <li><a href="javascript:;">Dropdown #1</a></li>
+		                        <li><a href="javascript:;">Dropdown #2</a></li>
+		                        <li><a href="javascript:;">Dropdown #3</a></li>
+		                        <li><a href="javascript:;">Dropdown #4</a></li>
+		                    </ul>
+						</li>
+					</ul>    				
+				</li>
+				
+				
+			
+			</ul>
+			
+			
+			<ul class="nav pull-right">
+		
+				<li class="">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+						<button class="search-btn"><i class="icon-search"></i></button>
+					</form>	    				
+				</li>
+				
+			</ul>
+			
+		</div> <!-- /.nav-collapse -->
+		
+	</div> <!-- /.container -->
+	
+</div> <!-- /#nav -->
+
+
+<div id="content">
+		
+	<div class="container">
+		
+		
+		<div id="page-title" class="clearfix">
+			
+			<ul class="breadcrumb">
+			  <li>
+			    <a href="/">Home</a> <span class="divider">/</span>
+			  </li>
+			  <li>
+			    <a href="#">Components</a> <span class="divider">/</span>
+			  </li>
+			  <li class="active">UI Elements</li>
+			</ul>
+			
+		</div> <!-- /.page-title -->
+		
+		
+		<div class="row">
+			
+			<div class="span12">
+	      		
+	      		<div class="widget nopad">
+						
+					<div class="widget-header">
+						<h3>
+							<i class="icon-beaker"></i>
+							Sliders
+							
+						</h3>
+					</div> <!-- /widget-header -->
+					
+					<div class="widget-content">
+						
+						
+						<div class="item-row">
+							
+							<div class="item-label">
+								Default Slider
+							</div> <!-- /item-label -->
+							
+							<div class="item-content">								
+								<div id="defaultSlider"></div>
+							</div> <!-- /item-content -->
+							
+						</div> <!-- /item-row -->
+						
+						
+						<div class="item-row">
+							
+							<div class="item-label">
+								Increment Slider
+							</div> <!-- /item-label -->
+							
+							<div class="item-content">	
+								<span>Donation amount ($50 increments):</span>
+									<span id="incrementAmount" style="border:0; color:#f6931f; font-weight:bold;"></span>							
+								<div id="incrementSlider" style="margin-top: 1em;"></div>
+							</div> <!-- /item-content -->
+							
+						</div> <!-- /item-row -->
+						
+						
+						<div class="item-row">
+							
+							<div class="item-label">
+								Range Slider
+							</div> <!-- /item-label -->
+							
+							<div class="item-content">								
+								<span>Price range:</span>
+									<span id="amount" style="border:0; color:#f6931f; font-weight:bold;"></span>
+
+								<div id="rangeSlider" style="margin-top: 1em;"></div>
+							</div> <!-- /item-content -->
+							
+						</div> <!-- /item-row -->
+						
+						
+						<div class="item-row">
+							
+							<div class="item-label">
+								Minimum Value Slider
+							</div> <!-- /item-label -->
+							
+							<div class="item-content">	
+								<span>Maximum price:</span>
+									<span id="rangeMinAmount" style="border:0; color:#f6931f; font-weight:bold;"></span>							
+								<div id="rangeMinSlider" style="margin-top: 1em;"></div>
+							</div> <!-- /item-content -->
+							
+						</div> <!-- /item-row -->
+						
+						
+						<div class="item-row">
+							
+							<div class="item-label">
+								Vertical Slider
+							</div> <!-- /item-label -->
+							
+							<div class="item-content">								
+								<div id="eq">
+									<span>88</span>
+									<span>77</span>
+									<span>55</span>
+									<span>33</span>
+									<span>40</span>
+									<span>45</span>
+									<span>70</span>
+								</div>
+							</div> <!-- /item-content -->
+							
+						</div> <!-- /item-row -->
+						
+							
+						
+					</div> <!-- /widget-content -->
+					
+				</div> <!-- /widget -->
+				
+				
+				
+				<div class="widget nopad">
+						
+					<div class="widget-header">
+						<h3>
+							<i class="icon-beaker"></i>
+							Progress Bar
+							
+						</h3>
+					</div> <!-- /widget-header -->
+					
+					<div class="widget-content">
+						
+						<div class="item-row">
+							
+							<div class="item-label">
+								Basic
+							</div> <!-- /item-label -->
+							
+							<div class="item-content">								
+								<div class="progress progress-primary" style="margin-bottom: 2em;">
+									<div class="bar" style="width: 20%"></div>
+								</div>
+														
+								<div class="progress progress-secondary" style="margin-bottom: 2em;">
+									<div class="bar" style="width: 35%"></div>
+								</div>
+														
+								<div class="progress progress-tertiary" style="margin-bottom: 2em;">
+									<div class="bar" style="width: 50%"></div>
+								</div>
+							</div> <!-- /item-content -->
+							
+						</div> <!-- /item-row -->
+						
+						<div class="item-row">
+							
+							<div class="item-label">
+								Striped
+							</div> <!-- /item-label -->
+							
+							<div class="item-content">								
+								<div class="progress progress-primary progress-striped" style="margin-bottom: 2em;">
+									<div class="bar" style="width: 20%"></div>
+								</div>		
+													
+								<div class="progress progress-secondary progress-striped" style="margin-bottom: 2em;">
+									<div class="bar" style="width: 35%"></div>
+								</div>	
+														
+								<div class="progress progress-tertiary progress-striped" style="margin-bottom: 2em;">
+									<div class="bar" style="width: 50%"></div>
+								</div>
+							</div> <!-- /item-content -->
+							
+						</div> <!-- /item-row -->
+						
+						<div class="item-row">
+							
+							<div class="item-label">
+								Animated
+							</div> <!-- /item-label -->
+							
+							<div class="item-content">								
+								<div class="progress progress-primary progress-striped active" style="margin-bottom: 2em;">
+									<div class="bar" style="width: 20%"></div>
+								</div>
+														
+								<div class="progress progress-secondary progress-striped active" style="margin-bottom: 2em;">
+									<div class="bar" style="width: 35%"></div>
+								</div>
+														
+								<div class="progress progress-tertiary progress-striped active" style="margin-bottom: 2em;">
+									<div class="bar" style="width: 50%"></div>
+								</div>
+							</div> <!-- /item-content -->
+							
+						</div> <!-- /item-row -->
+						
+						
+					</div> <!-- /widget-content -->
+						
+				</div> <!-- /widget -->	
+				
+				
+			</div> <!-- /span12 -->
+				
+		</div> <!-- /row -->
+		
+		
+		<div class="row">
+			
+			<div class="span4">
+			
+			<div class="widget nopad">
+						
+				<div class="widget-header">
+					<h3>Modal & Lightbox</h3>
+				</div> <!-- /widget-header -->
+				
+				<div class="widget-content">					
+					
+					<div class="item-row">
+							
+						<div class="item-label">
+							Bootstrap Modal
+						</div> <!-- /item-label -->
+						
+						<div class="item-content">								
+							<a href="#myModal" data-toggle="modal" class="btn">Show Modal</a>
+						</div> <!-- /item-content -->
+						
+					</div> <!-- /item-row -->				
+					
+					<div class="item-row">
+							
+						<div class="item-label">
+							Lightbox Image
+						</div> <!-- /item-label -->
+						
+						<div class="item-content">			
+							<a href="./img/lightbox/4.jpg" class="btn ui-lightbox">Show Image</a>
+						</div> <!-- /item-content -->
+						
+					</div> <!-- /item-row -->				
+					
+					<div class="item-row">
+							
+						<div class="item-label">
+							Lightbox Video
+						</div> <!-- /item-label -->
+						
+						<div class="item-content">								
+							<a href="http://www.youtube.com/watch?v=TsUD1za9TA4" class="btn ui-lightbox">Show Video</a>
+						</div> <!-- /item-content -->
+						
+					</div> <!-- /item-row -->				
+					
+					<div class="item-row">
+							
+						<div class="item-label">
+							Lightbox Map
+						</div> <!-- /item-label -->
+						
+						<div class="item-content">								
+							<a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=+paris+eiffel&ie=UTF8&hq=eiffel&hnear=Paris,+Ile-de-France,+France&ll=48.855708,2.300434&spn=0.013243,0.042272&z=15&lightbox[width]=610&lightbox[height]=360" class="btn ui-lightbox">Show Maps</a>
+						</div> <!-- /item-content -->
+						
+					</div> <!-- /item-row -->
+					
+									
+					
+					
+				</div> <!-- /widget-content -->
+					
+				</div> <!-- /widget -->
+				
+			</div> <!-- /span6 -->
+			
+			
+			
+			
+			<div class="span4">
+			
+			<div class="widget nopad">
+						
+				<div class="widget-header">
+					<h3>Growl Message</h3>
+				</div> <!-- /widget-header -->
+				
+				<div class="widget-content">					
+					
+					<div class="item-row">
+							
+						<div class="item-label">
+							<span class="label label-info">Info Growl</span>
+						</div> <!-- /item-label -->
+						
+						<div class="item-content">								
+							<button class="growl_type btn" data-type="info">Show Info Growl</button>
+						</div> <!-- /item-content -->
+						
+					</div> <!-- /item-row -->
+					
+					<div class="item-row">
+						
+						<div class="item-label">								
+							<span class="label label-important">Error Growl</span>
+						</div> <!-- /item-label -->
+						
+						<div class="item-content">								
+							<button class="growl_type btn" data-type="error">Show Error Growl</button>
+						</div> <!-- /item-content -->
+						
+					</div> <!-- /item-row -->
+					
+					<div class="item-row">
+						
+						<div class="item-label">
+							<span class="label label-warning">Warning Growl</span>
+						</div> <!-- /item-label -->
+						
+						<div class="item-content">								
+							<button class="growl_type btn" data-type="warning">Show Warning Growl</button>
+						</div> <!-- /item-content -->
+						
+					</div> <!-- /item-row -->
+					
+					<div class="item-row">							
+					
+						<div class="item-label">
+							<span class="label label-success">Success Growl</span>
+						</div> <!-- /item-label -->
+						
+						<div class="item-content">								
+							<button class="growl_type btn" data-type="success">Show Success Growl</button>
+						</div> <!-- /item-content -->
+						
+					</div> <!-- /item-row -->					
+					
+					
+				</div> <!-- /widget-content -->
+					
+				</div> <!-- /widget -->
+				
+			</div> <!-- /span6 -->
+			
+			
+			
+			<div class="span4">
+			
+			<div class="widget nopad">
+						
+				<div class="widget-header">
+					<h3>Alert Messages</h3>
+				</div> <!-- /widget-header -->
+				
+				<div class="widget-content">
+					
+					
+					<div class="item-row">
+						
+						<div class="item-label">
+							<span class="label label-info">Info Alert</span>
+						</div> <!-- /item-label -->
+						
+						<div class="item-content">								
+							<button class="alert_type btn" data-type="info">Show Info Alert</button>
+						</div> <!-- /item-content -->
+						
+					</div> <!-- /item-row -->
+					
+					<div class="item-row">
+						
+						<div class="item-label">
+							<span class="label label-important">Error Alert</span>
+						</div> <!-- /item-label -->
+						
+						<div class="item-content">								
+							<button class="alert_type btn" data-type="error">Show Error Alert</button>
+						</div> <!-- /item-content -->
+						
+					</div> <!-- /item-row -->
+					
+					<div class="item-row">
+						
+						<div class="item-label">
+							<span class="label label-warning">Warning Alert</span>
+						</div> <!-- /item-label -->
+						
+						<div class="item-content">								
+							<button class="alert_type btn" data-type="warning">Show Warning Alert</button>
+						</div> <!-- /item-content -->
+						
+					</div> <!-- /item-row -->
+					
+					<div class="item-row">							
+					
+						<div class="item-label">
+							<span class="label label-success">Success Alert</span>
+						</div> <!-- /item-label -->
+						
+						<div class="item-content">								
+							<button class="alert_type btn" data-type="success">Show Success Alert</button>
+						</div> <!-- /item-content -->
+						
+					</div> <!-- /item-row -->				
+					
+					
+				</div> <!-- /widget-content -->
+					
+				</div> <!-- /widget -->
+				
+			</div> <!-- /span6 -->
+				
+		</div> <!-- /row -->
+		
+		
+		
+		<div class="row">
+			
+			<div class="span6">	      		
+	      		
+				<div id="pickers" class="widget widget-form">
+	      			
+	      			<div class="widget-header">
+	      				<h3>
+		      				<i class="icon-pencil"></i>
+		      				Pickers
+		      				
+	      				</h3>	
+      				</div> <!-- /widget-header -->
+					
+					<div class="widget-content">
+						
+						<form class="form-horizontal">
+					        <fieldset>
+					          <div class="control-group">
+					            <label class="control-label" for="datepicker-basic">Date Picker</label>
+					            <div class="controls">
+					              <input class="input-medium" id="datepicker-basic" type="text" value="">
+					            </div>
+					          </div>
+					          <div class="control-group">
+					            <label class="control-label" for="datepicker-multi">Date Picker Multi Month</label>
+					            <div class="controls">
+					              <input class="input-medium" id="datepicker-multi" type="text" value="">
+					            </div>
+					          </div>
+					          <div class="control-group">
+					            <label class="control-label" for="timepicker-basic">Time Picker </label>
+					            <div class="controls">
+					              <input class="input-medium" id="timepicker-basic" type="text" value="">
+					            </div>
+					          </div>
+					          
+					          <div class="control-group">
+					            <label class="control-label" for="colorpicker-component">Color Picker </label>
+					            <div class="controls">
+					              
+					            	<div class="input-append color" data-color="rgb(255, 146, 180)" data-color-format="rgb" id="cp3">
+										<input type="text" class="span2" value="" id="colorpicker-component">
+									</div>
+					            	
+					            </div>
+					          </div>
+					        </fieldset>
+					      </form>	
+						
+					</div> <!-- /widget-content -->
+						
+				</div> <!-- /widget -->
+				
+				
+				
+				
+				<div class="widget">
+						
+					<div class="widget-header">
+						<h3>Inline Alerts</h3>
+					</div> <!-- /widget-header -->
+					
+					<div class="widget-content">
+						
+						<div class="alert alert-block">
+						  <a class="close" data-dismiss="alert" href="#">&times;</a>
+						  <h4 class="alert-heading">Warning!</h4>
+						  Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra.
+						</div> <!-- ./alert -->
+						
+						<div class="alert alert-success">
+						  <a class="close" data-dismiss="alert" href="#">&times;</a>
+						  <h4 class="alert-heading">Success!</h4>
+						  Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra.
+						</div> <!-- ./alert -->
+						
+						<div class="alert alert-info">
+						  <a class="close" data-dismiss="alert" href="#">&times;</a>
+						  <h4 class="alert-heading">Info!</h4>
+						  Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra.
+						</div> <!-- ./alert -->
+						
+						<div class="alert alert-error">
+						  <a class="close" data-dismiss="alert" href="#">&times;</a>
+						  <h4 class="alert-heading">Error!</h4>
+						  Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra.
+						</div> <!-- ./alert -->
+						
+						
+					</div> <!-- /widget-content -->
+						
+				</div> <!-- /widget -->								
+				
+		    </div> <!-- /span6 -->
+		    
+		    
+			
+		    <div class="span6">
+		    	
+		    	
+		    	
+		    	
+		    	
+		    	
+		    	
+		    	
+		    	<div class="widget">
+						
+					<div class="widget-header">
+						<i class="icon-beaker"></i>
+						<h3>Popups</h3>
+					</div> <!-- /widget-header -->
+					
+					<div class="widget-content">
+						
+						<h3>Tooltips</h3>
+
+					<div class="gravity">
+					  
+					      <a href="javascript:;" class="btn btn-small btn-primary ui-tooltip" data-placement="top" title="This is an example of north gravity">Top</a>
+					  
+					      <a href="javascript:;" class="btn btn-small btn-primary ui-tooltip" data-placement="left" title="This is an example of west gravity">Left</a>
+					   
+					      <a href="javascript:;" class="btn btn-small btn-primary ui-tooltip" data-placement="right" title="This is an example of east gravity">Right</a>
+					    
+					      <a href="javascript:;" class="btn btn-small btn-primary ui-tooltip" data-placement="bottom" title="This is an example of south gravity">Bottom</a>
+					    </div>
+					
+					
+					<hr />
+					
+					<h3>Popover</h3>
+
+
+					<div class="gravity">
+					      <a href="javascript:;" class="btn btn-small btn-inverse ui-popover" data-placement="top" data-content="This is an example of north gravity">Top</a>
+					    
+					      <a href="javascript:;" class="btn btn-small btn-inverse ui-popover" data-placement="left" data-content="This is an example of west gravity">Left</a>
+					    
+					      <a href="javascript:;" class="btn btn-small btn-inverse ui-popover" data-placement="right" data-content="This is an example of east gravity">Right</a>
+					    
+					      <a href="javascript:;" class="btn btn-small btn-inverse ui-popover" data-placement="bottom" data-content="This is an example of south gravity">Bottom</a>
+					    </div>
+						
+						
+					</div> <!-- /widget-content -->
+						
+				</div> <!-- /widget -->
+		    	
+		    	
+		    	
+		    	
+		    	<div class="widget">
+						
+					<div class="widget-header">
+						<h3>Pagination</h3>
+					</div> <!-- /widget-header -->
+					
+					<div class="widget-content">
+						
+						<div class="pagination pagination-centered" style="margin: 0;">
+						  <ul>
+						    <li><a href="#">&laquo; Prev</a></li>
+						    <li>
+						      <a href="#">1</a>
+						    </li>
+						    <li><a href="#">2</a></li>
+						    <li class="active"><a href="#">3</a></li>
+						    <li><a href="#">4</a></li>
+						    <li><a href="#">5</a></li>
+						    <li><a href="#">6</a></li>
+						    <li class="disabled"><a href="#">...</a></li>
+						    <li><a href="#">11</a></li>
+						    <li><a href="#">12</a></li>
+						    <li><a href="#">Next &raquo;</a></li>
+						  </ul>
+						</div> <!-- /pagination -->
+						
+						
+					</div> <!-- /widget-content -->
+						
+				</div> <!-- /widget -->
+		    	
+		    	
+		    	
+		    	
+		    	<div class="widget">
+						
+					<div class="widget-header">
+						<h3>Breadcrumbs</h3>
+					</div> <!-- /widget-header -->
+					
+					<div class="widget-content">
+						
+						<ul class="breadcrumb" style="margin-bottom: 0">
+						  <li>
+						    <a href="#">Home</a> <span class="divider">/</span>
+						  </li>
+						  <li>
+						    <a href="#">Library</a> <span class="divider">/</span>
+						  </li>
+						  <li class="active">Data</li>
+						</ul>
+						
+						
+					</div> <!-- /widget-content -->
+						
+				</div> <!-- /widget -->
+		    	
+		    	
+		    </div> <!-- /span6 -->
+			
+		    
+		</div> <!-- /row -->
+		
+		
+	</div> <!-- /.container -->
+	
+</div> <!-- /#content -->
+
+
+
+<div id="footer">	
+		
+	<div class="container">
+		
+		&copy; 2012 Propel UI, all rights reserved.
+		
+	</div> <!-- /.container -->		
+	
+</div> <!-- /#footer -->
+
+
+<div class="modal fade hide" id="myModal">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <h3>Modal header</h3>
+  </div>
+  <div class="modal-body">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+    <a href="#" class="btn btn-primary">Save changes</a>
+  </div>
+</div>
+
+
+  </body>
+</html>

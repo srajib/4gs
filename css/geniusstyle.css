@@ -1,0 +1,113 @@
+body{background-color:#fff; font-family:Arial} /* background-image:url(../images/bk.png); background-repeat:repeat-x;  */
+
+#whole {width:990px; height:auto; margin:-8px auto; background-color:#fff}
+
+/* #upperportion{float:left; width:990px; height:193px; background-color:#fff; background-image:url(../images/upper.png);} */
+
+#header{float:left; width:990px; height:150px;} /*  background-color:#fff; background-image:url(../images/header.png); */
+
+#headerleft{float:left; margin:10px 0 0 5px; width:185px; height:125px;} /* background-color:#EEE */
+#headerleft img{width:185px; height:125px;}
+#headerleft img a{border:0}
+
+#headerright{float:right; width:460px; height:140px;} /* background-color:#fff; background-image:url(../images/headerright.png); */
+.cartarea{float:right; margin:25px 0 0 0; width:195px; height:50px; background-color:#; background-image:url(../images/shopping-cart-bk.png)}
+.cartnumbers{float:left; margin:25px 0 0 58px; font-size:14px;}
+.cartnumbers a{color:#fff; text-decoration:none;}
+.cartnumbers a:hover{color:#CCC; text-decoration:underline;}
+
+.toplinks{float:right; margin:50px 20px 0 0; width:auto; height:25px; color:#999; font-size:13px}
+.toplinks a{color:#777; text-decoration:none; font-size:13px;}
+.toplinks a:hover{color:#333; text-decoration:underline}
+
+.selectoptionsearch{float:right; margin:35px 0 0 0; width:450px; height:26px}
+.selecttaka{float:right; margin:0 10px 0 0; width:200px; height:22px; border:1px solid #CCC}
+.searchbutton{float:right; width:50px; height:22px; padding:0 5px; font-size:12px; color:#fff; background-color:brown; border:0px solid #CCC}
+.searchinput{float:right; width:170px; height:18px; border:1px solid #CCC}
+
+
+#topmenuarea{float:left; margin:6px 0 2px 0; width:990px; height:35px; background-color:#fff; }
+.topmenu{float:left; margin:0 1px 0 0; width:140px; height:28px; text-align:center; background-color:; background-image:url(../images/button-gray.png); padding-top:7px;}
+.topmenu a{color:#777; text-decoration:none; font-size:14px;}
+.topmenu a:hover{color:#fff;}
+.topmenu:hover{background-image:url(../images/button-orange.png);}
+
+#maincontent{float:left; margin:20px 0 0 0; width:988px; height:auto; background-color:#fff; border:0px solid #DDD;}
+
+#leftcontent1{float:left; width:270px; height:auto; background-color:#fff; border:1px solid #DDD;}
+.leftcat1list1{padding:8px 8px 8px 16px; background:#E7E7E7; color:#333; border-bottom:1px solid #CCC;}
+
+#rightcontent{float:right; width:700px; height:auto; background-color:#fff; border:1px solid #DDD;}
+
+#rightcontent1{float:right; width:700px; margin: 0 0 15px 0; padding:0 0 10px 0; background-color:#fff; border:1px solid #DDD;}
+#rightcontent2{float:right; margin:0; padding:0 0 10px 0; width:700px; padding:0 0 10px 0;background-color:#fff; border:1px solid #DDD;}
+
+.cat1detailstitle{float:left; margin:10px 0 0 8px; width:680px; height:px; padding:5px 0; font-size:13px; font-weight:bold; color:#333; background-color:#EEE; border:1px solid #DDD}
+
+#cat1listbox{float:left; margin-left:8px; width:680px; height:100px; font-size:14px; 
+border-right:1px solid #DDD; border-bottom:1px solid #DDD; border-left:1px solid #DDD; }
+#cat1thumb{float:left; width:100px; height:100px;}
+#cat1thumb img{width:100px; height:100px} 
+#cat1thumb img a{border:0} 
+#cat1namearea{float:left; width:200px; height:100px;}
+.cat1name{margin:10px 15px}
+#cat1namearea a{text-decoration:none; color:chocolate; font-weight:bold}
+#cat1descriptarea{float:left; width:380px; height:100px; overflow:hidden;}
+.cat1descript{margin:10px}
+
+#cat1listbox2{float:left; margin:8px 0 0 10px; width:216px; height:195px; font-size:14px; text-align:center; border:0px solid #333;}
+#cat1thumb2{float:left; width:210px; height:140px; border:3px solid #CCC}
+#cat1thumb2 img{width:210px; height:140px} 
+#cat1thumb2 img a{border:0} 
+#cat1namearea2{float:left; width:210px; height:100px;}
+.cat1name2{margin:10px 15px}
+#cat1namearea2 a{text-decoration:none; color:#333; font-weight:normal}
+
+.searchpages{float:left; width:680px;}
+
+#prodlistbox{float:left; margin:10px 0 0 10px; width:160px; height:300px; padding-bottom:10px; text-align:center; font-size:13px; border:1px solid #DDD}
+
+.prodthumb{float:left; width:160px; height:100px;}
+.prodthumb img{margin:10px 0 0 0; width:100px; height:100px;} 
+.prodthumb img a{border:0} 
+.prodthumb:hover{transform:rotate(0deg)scale(2.5); -ms-transform:rotate(0deg)scale(2.5); -moz-transform:rotate(0deg)scale(2.5); -webkit-transform:rotate(0deg)scale(2.5); -o-transform:rotate(0deg)scale(1.5);}
+
+.prodnamearea{float:left; margin:20px 10px 0 10px; width:140px; height:18px; text-align:center; overflow:hidden;}
+.prodnamearea a{text-decoration:none; font-weight:bold; color:chocolate}
+
+.proddescriptarea{float:left; margin:0 10px 10px 10px; width:140px; height:50px; padding-bottom:5px; text-align:center; overflow:hidden;}
+
+.price{float:left; margin:5px 0; width:160px; height:18px; color:red; font-size:15px; font-weight:bold; text-align:center; overflow:hidden;}
+
+.addtocartbutton{float:left; margin:10px 0; width:160px; height:30px; color:red; font-size:15px; text-align:center; overflow:hidden;}
+.addtocartsubmitbutton{padding:5px 10px; background-color:brown; color:white; border:0}
+.addtocartsubmitbutton:hover{background-color:#C44210;}
+
+.single:hover{transform:rotate(0deg)scale(2.5); -ms-transform:rotate(0deg)scale(2.5); -moz-transform:rotate(0deg)scale(2.5); -webkit-transform:rotate(0deg)scale(2.5); -o-transform:rotate(0deg)scale(1.5);}
+
+.vdc{float:left; margin:20px 10px 0 10px; width:650px; height:325px;}
+.vdc img{width:650px; height:325px; border:0}
+
+.aboutuscontent{margin:20px; font-size:14px; text-align:justify}
+.heading7{margin-top:22px; color:blue; font-size:16px; font-weight:bold}
+
+#availability_status {
+	font-size:11px;
+	margin-left:10px;
+}
+
+#product1{float:left; padding:10px; margin:20px 0 0 15px; width:160px; height:230px; font-size:13px; border:1px solid #CCC; overflow:hidden}
+#product1 img{height:140px; margin-bottom:5px}
+#product1 img a{border:0}
+#product1 a{text-decoration:none}
+#product1 a:hover{text-decoration:underline}
+
+#greener{float:left; margin:55px 0 0 0; width:990px; height:;}
+#greener img{float:left; width:990px; height:auto;}
+#greener img a{border:0}
+
+#hitcounter{float:left; margin:55px 0 0 0; width:990px; height:;}
+
+#footer{float:left; margin:35px 0 45px 0; width:990px; height:; padding:15px 0; background-color:#D5D5D5; color:#333; font-size:13px; text-align:center;}
+#footer a{text-decoration:none; color:#333}
+#footer a:hover{text-decoration:underline; color:#555}

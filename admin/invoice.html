@@ -1,0 +1,423 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Invoice | Slate Admin 2.0</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!-- Styles -->
+<link href="./css/bootstrap.css" rel="stylesheet">
+<link href="./css/bootstrap-responsive.css" rel="stylesheet">
+<link href="./css/bootstrap-overrides.css" rel="stylesheet">
+
+<link href="./css/ui-lightness/jquery-ui-1.8.21.custom.css" rel="stylesheet">
+
+<link href="./css/slate.css" rel="stylesheet">
+<link href="./css/slate-responsive.css" rel="stylesheet">  
+  
+<link href="./css/pages/invoice.css" rel="stylesheet">
+
+
+
+<!-- Javascript -->
+<script src="./js/jquery-1.7.2.min.js"></script>
+<script src="./js/jquery-ui-1.8.21.custom.min.js"></script>
+<script src="./js/jquery.ui.touch-punch.min.js"></script>
+<script src="./js/bootstrap.js"></script>
+
+<script src="./js/Slate.js"></script>
+
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+ 	
+  	
+<div id="header">
+	
+	<div class="container">			
+		
+		<h1><a href="./">Slate Admin 2.0</a></h1>			
+		
+		<div id="info">				
+			
+			<a href="javascript:;" id="info-trigger">
+				<i class="icon-cog"></i>
+			</a>
+			
+			<div id="info-menu">
+				
+				<div class="info-details">
+				
+					<h4>Welcome back, John D.</h4>
+					
+					<p>
+						Logged in as Admin.
+						<br>
+						You have <a href="javascript:;">5 messages.</a>
+					</p>
+					
+				</div> <!-- /.info-details -->
+				
+				<div class="info-avatar">
+					
+					<img src="./img/avatar.jpg" alt="avatar">
+					
+				</div> <!-- /.info-avatar -->
+				
+			</div> <!-- /#info-menu -->
+			
+		</div> <!-- /#info -->
+		
+	</div> <!-- /.container -->
+
+</div> <!-- /#header -->
+
+
+<div id="nav">
+		
+	<div class="container">
+		
+		<a href="javascript:;" class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        	<i class="icon-reorder"></i>
+      	</a>
+		
+		<div class="nav-collapse">
+			
+			<ul class="nav">
+		
+				<li class="nav-icon">
+					<a href="./">
+						<i class="icon-home"></i>
+						<span>Home</span>
+					</a>	    				
+				</li>
+				
+				<li class="dropdown">					
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-th"></i>
+						Components
+						<b class="caret"></b>
+					</a>	
+				
+					<ul class="dropdown-menu">
+						<li><a href="./forms.html">Forms</a></li>
+						<li><a href="./ui-elements.html">UI Elements</a></li>
+						<li><a href="./grid.html">Grid Layout</a></li>
+						<li><a href="./tables.html">Tables</a></li>
+						<li><a href="./widgets.html">Widget Boxes</a></li>
+						<li><a href="./charts.html">Charts</a></li>
+						<li><a href="./tabs.html">Tabs & Accordion</a></li>
+						<li><a href="./buttons.html">Buttons</a></li>
+					</ul>    				
+				</li>
+				
+				<li class="dropdown active">					
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-copy"></i>
+						Sample Pages
+						<b class="caret"></b>
+					</a>	
+				
+					<ul class="dropdown-menu">
+						<li><a href="./invoice.html">Invoice</a></li>
+						<li><a href="./faq.html">FAQ</a></li>
+						<li><a href="./pricing.html">Pricing Plans</a></li>
+						<li><a href="./gallery.html">Image Gallery</a></li>
+						<li><a href="./wizard.html">Wizard</a></li>
+						<li><a href="./reports.html">Reports</a></li>
+						<li><a href="./calendar.html">Calendar</a></li>
+					</ul>    				
+				</li>
+				
+				<li class="dropdown">					
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-external-link"></i>
+						Other Pages
+						<b class="caret"></b>
+					</a>	
+				
+					<ul class="dropdown-menu">							
+						<li><a href="./login.html">Login</a></li>
+						<li><a href="./signup.html">Signup</a></li>
+						<li><a href="./error.html">Error</a></li>
+						<li class="dropdown">
+							<a href="javascript:;">
+								Dropdown Menu									
+								<i class="icon-chevron-right sub-menu-caret"></i>
+							</a>
+							
+							<ul class="dropdown-menu sub-menu">
+		                        <li><a href="javascript:;">Dropdown #1</a></li>
+		                        <li><a href="javascript:;">Dropdown #2</a></li>
+		                        <li><a href="javascript:;">Dropdown #3</a></li>
+		                        <li><a href="javascript:;">Dropdown #4</a></li>
+		                    </ul>
+						</li>
+					</ul>    				
+				</li>
+				
+				
+			
+			</ul>
+			
+			
+			<ul class="nav pull-right">
+		
+				<li class="">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+						<button class="search-btn"><i class="icon-search"></i></button>
+					</form>	    				
+				</li>
+				
+			</ul>
+			
+		</div> <!-- /.nav-collapse -->
+		
+	</div> <!-- /.container -->
+	
+</div> <!-- /#nav -->
+
+
+<div id="content">
+		
+	<div class="container">
+		
+		
+		<div id="page-title" class="clearfix">
+			
+			<h1>Invoice Details</h1>
+			
+			<ul class="breadcrumb">
+			  <li>
+			    <a href="/">Home</a> <span class="divider">/</span>
+			  </li>
+			  <li>
+			    <a href="#">Sample Pages</a> <span class="divider">/</span>
+			  </li>
+			  <li class="active">Invoice Details</li>
+			</ul>
+			
+		</div> <!-- /.page-title -->
+		
+		
+		<div class="row">
+			
+			<div class="span8">
+				
+				<div id="invoice-details" class="widget">
+						
+				
+				<div class="widget-header">
+					<h3>Invoice Details</h3>
+					
+					<div class="widget-actions">
+						<div class="btn-group">
+				          <button class="btn btn-small">New Invoice</button>
+				          <button class="btn btn-small dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+				          <ul class="dropdown-menu">
+				            <li><a href="#">New Project</a></li>
+				            <li><a href="#">New Client</a></li>
+				            <li class="divider"></li>
+				            <li><a href="#">Separated link</a></li>
+				          </ul>
+				        </div><!-- /btn-group -->					
+					</div> <!-- /.widget-actions -->
+				</div> <!-- /.widget-header -->
+					
+					<div class="widget-tabs">
+						<ul class="nav nav-tabs">
+						  <li class="active">						  	
+						    <a href="#current-invoices">
+						    	<i class="icon-money"></i> 
+						    	Current Invoice
+					    	</a>
+						  </li>
+						  <li>
+						  	<a href="#overdue-invoices">
+						  		<i class="icon-th-list"></i>
+						  		Overdue Invoices
+						  		<span class="badge badge-important">1</span>
+					  		</a>					  		
+				  		</li>
+						  <li>
+						  	<a href="#past-invoices">
+						  		<i class="icon-th-list"></i>
+						  		Past Invoices 
+						  		<span class="badge badge-warning">4</span>					  		
+					  		</a>					  		
+				  		</li>
+						</ul>
+						
+					</div> <!-- /.widget-tabs -->
+					
+					<div class="widget-content">
+						
+						<div class="tab-content">
+						    <div class="tab-pane active" id="current-invoices">
+						
+						
+						<div class="pull-left">
+							<ul class="client_details">
+								<li><strong class="name">John Doe Inc.</strong></li>
+								<li>15 Doe Way</li>
+								<li>Doe City, MI 49000</li>
+								<li>United States</li>
+								<li>Phone: 269-555-5555</li>
+								<li>Faxe: 269-777-7777</li>
+							</ul>
+						</div> <!-- /.pull-left -->
+						
+						<div class="pull-right">
+							<ul class="invoice_details">
+								<li>Status: <span class="label label-warning">Open</span></li>
+								<li>Invoice Number: 1001</li>
+								<li>Invoice Date: 10/25/2010</li>
+								<li>Job Number: WEB-2345</li>
+							</ul>
+						</div> <!-- /.pull-right -->
+						
+						<div class="clear"></div>
+						
+						<br /><br />
+						
+						<table class="table table-striped table-bordered table-highlight">
+					
+							<thead>
+								<tr>
+									<th>Qty</th>
+									<th>Unit</th>
+									<th>Description</th>
+									<th class="price">Price</th>
+									<th class="total">Total</th>
+								</tr>
+							</thead>	
+							
+							<tbody>
+								<tr>
+									<td>23.5</td>			
+									<td>Hours</td>
+									<td>Custom Web Design</td>
+									<td class="price">100.00</td>
+									<td class="total">$2350.00</td>
+								</tr>
+								<tr>
+									<td>10</td>			
+									<td>Hours</td>
+									<td>Graphic Design</td>
+									<td class="price">75.00</td>
+									<td class="total">$750.00</td>
+								</tr>
+								<tr>
+									<td>1</td>			
+									<td>Product</td>
+									<td>CMS Install/Setup</td>
+									<td class="price">1000.00</td>
+									<td class="total">$1000.00</td>
+								</tr>
+								<tr>
+									<td class="sub_total" colspan="3"></td>
+									<td class="sub_total">Subtotal:</td>
+									<td class="sub_total">$4100.00</td>
+								</tr>
+								<tr class="total_bar">
+									<td class="grand_total" colspan="3"></td>
+									<td class="grand_total">Total:</td>
+									<td class="grand_total">$4100.00</td>
+								</tr>
+							</tbody>
+						</table>
+						
+						<br />
+						<hr />
+						
+						<h3>Invoice Notes</h3>
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						
+							</div> <!-- /.tab-pane -->
+							
+							
+							<div class="tab-pane" id="overdue-invoices">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div> <!-- /.tab-pane -->
+							
+							
+							<div class="tab-pane" id="past-invoices">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div> <!-- /.tab-pane -->
+							
+						</div> <!-- /.tab-content -->
+						
+					</div> <!-- /widget-content -->
+					
+				</div> <!-- /widget -->
+				
+			</div> <!-- /.span8 -->
+			
+			
+			<div class="span4">
+				
+				<div class="widget">
+					
+					<div class="widget-content">
+						
+						<div id="invoice_total">$4100.00</div>						
+						
+						<ul id="invoice_actions">
+							<li class="send"><a href="javascript:;">Send Invoice</a></li>
+							<li class="edit"><a href="javascript:;">Edit Invoice</a></li>
+							<li class="print"><a href="javascript:;">Print Invoice</a></li>
+							<li class="duplicate"><a href="javascript:;">Duplicate Invoice</a></li>
+							<li class="delete"><a href="javascript:;">Delete Invoice</a></li>
+							<li class="change"><a href="javascript:;">Change Status</a></li>
+						</ul>
+						
+					</div> <!-- /.widget-content -->
+					
+				</div> <!-- /.widget -->
+				
+			</div> <!-- /.span4 -->
+		
+		</div> <!-- /.row -->
+		
+		
+	</div> <!-- /.container -->
+	
+</div> <!-- /#content -->
+
+
+
+<div id="footer">	
+		
+	<div class="container">
+		
+		&copy; 2012 Propel UI, all rights reserved.
+		
+	</div> <!-- /.container -->		
+	
+</div> <!-- /#footer -->
+
+
+
+
+
+  </body>
+</html>
