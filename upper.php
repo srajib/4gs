@@ -61,7 +61,7 @@ echo " Item</a>";
 	}
 	else{
 		echo "Welcome $k";
-		echo " | <a href='logout.php' style='color:#999; text-decoration:none' title='Logout'>Logout</a>";
+		echo " | <a href='logout.php' title='Logout'>Logout</a> | <a href='order_status_list.php'>Status</a>";
 	}
 ?>
 	

@@ -49,6 +49,45 @@ $("#btn_print").click(function(){
 
 
 
+<div style="width:1000px;  margin:0 auto">
+
+<div id="h" style="float:left; width:1260px; margin-bottom:10px; padding-bottom:10px; border-bottom:1px solid #777">  	
+
+<div id="h" style="float:left; width:200px;">  	
+	<img src="../images/logo.png" style="width:125px; padding:15px 0">	
+</div>
+
+<div id="h" style="margin:0 auto; width:300px; font-size:25px">  	
+
+<br><b>Order Details</b>
+
+</div>
+
+<div id="h" style="float:right; width:450px;">  	
+	
+</div>
+
+
+</div>
+
+
+
+
+<div id="" style="float:left; margin:50px 0 0 0px; width:300px;">
+<?php							
+$pp=$_SESSION['username'];
+extract($_POST);
+$sql3 = mysql_query("SELECT * FROM members WHERE members.username = '$pp' LIMIT 1");
+while($row3 = mysql_fetch_array($sql3))
+{
+	// echo "Order No. " . $row3['ord_id'].'       ';
+	echo "<br><br>Customer Name : " . $row3['fname'].' '.$row3['lname'];
+echo "\n";
+	echo "<br>Email : " . $row3['email'];
+}	
+?>
+
+</div>
 <div id="content2" style="float:left; margin:50px 0 0 0; width:990px;">
 
 
@@ -66,13 +105,16 @@ $("#btn_print").click(function(){
 <tbody>
 
 <?php
+
 $lu=$_SESSION['username'];	
 $xyz = mysql_query("SELECT * FROM order_list ORDER BY order_list.ord_id DESC LIMIT 1");
 while($row5=mysql_fetch_array($xyz)){	
-	echo "Username: " . $lu;	// echo $row5['ord_id'];	echo "<br/><br/><br/>";	// $tuma='73';
-	echo "<br/><br/>";	
+	// echo "Username: " . $lu;	// echo $row5['ord_id'];	echo "<br/><br/><br/>";	// $tuma='73';
+//	echo "<br/><br/>";	
 	$suma = $row5['ord_id'];	
 }
+
+
 
 // echo $lu=$_SESSION['username'];
 $sql2 = mysql_query("SELECT order_details.ord_details_id, order_list.ord_id, order_details.price, order_details.product_name, order_details.quantity, order_list.ord_time, order_list.username
@@ -103,6 +145,20 @@ while($row2 = mysql_fetch_array($sql2))
 ?>
 </tbody>
 </table>
+
+<br>Total Bill:
+
+<?php
+$sql9 = mysql_query("SELECT * FROM order_list WHERE order_list.username ='$lu' ORDER BY ord_id DESC LIMIT 1");
+
+while($row9 = mysql_fetch_array($sql9))
+{
+// $message .= "<tr><td></td><td></td><td><b>Total Bill </td><td>";
+echo $row9['final_bill'];
+echo " BDT";
+}
+?>
+
 
 </div>
 </body>

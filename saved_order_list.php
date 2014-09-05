@@ -19,7 +19,7 @@
 <div id="maincontent"><!-- maincontent start -->   
 <?php include('leftlist.php'); ?>
 <div id="rightcontent2">
-<div class="leftcat1list1">Order List <a href="loka.php">Printable</a>
+<div class="leftcat1list1">Order List &nbsp; &nbsp; <a href="loka.php">Print Order Details</a>
 </div>
 
 <center>

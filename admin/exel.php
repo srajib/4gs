@@ -1,6 +1,6 @@
 <?php 
 /*
-$conn = new PDO("mysql:host=localhost; dbname=genius", 'root', '');
+$conn = new PDO("mysql:host=localhost; dbname=www4gsho_4gs", 'www4gsho_root', 'genius4321');
 $sql = "SELECT product_name, price, quantity, model FROM product ORDER BY id DESC";
 $results = $conn->query($sql);
  
@@ -32,8 +32,9 @@ fclose($handle);
 	header("Content-Disposition: attachment; filename=\"$filename\""); 
 	header("Content-Type: application/vnd.ms-excel"); 
 	$flag = false; 
-	
-	$conn = new PDO("mysql:host=localhost; dbname=genius", 'root', '');
+
+       $conn = new PDO("mysql:host=localhost; dbname=www4gsho_4gs", 'www4gsho_root', 'genius4321');	
+	// $conn = new PDO("mysql:host=localhost; dbname=genius", 'root', '');
 	$sql = "SELECT product_name, price, quantity, model FROM product ORDER BY id DESC";
 	$data = $conn->query($sql);
 	

@@ -88,3 +88,43 @@ Stack trace:
 [25-Jul-2014 04:48:21 America/Chicago] PHP Warning:  Creating default object from empty value in /home/www4gsho/public_html/admin/product_edit.php on line 23
 [25-Jul-2014 04:49:02 America/Chicago] PHP Warning:  Creating default object from empty value in /home/www4gsho/public_html/admin/product_edit.php on line 23
 [25-Jul-2014 04:49:11 America/Chicago] PHP Warning:  Creating default object from empty value in /home/www4gsho/public_html/admin/product_edit.php on line 23
+[05-Aug-2014 11:48:44 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/www4gsho/public_html/admin/exel.php:25) in /home/www4gsho/public_html/admin/exel.php on line 32
+[05-Aug-2014 11:48:44 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/www4gsho/public_html/admin/exel.php:25) in /home/www4gsho/public_html/admin/exel.php on line 33
+[05-Aug-2014 11:48:44 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/www4gsho/public_html/admin/exel.php:36
+Stack trace:
+#0 /home/www4gsho/public_html/admin/exel.php(36): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home/www4gsho/public_html/admin/exel.php on line 36
+[05-Aug-2014 11:49:30 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/www4gsho/public_html/admin/exel.php:25) in /home/www4gsho/public_html/admin/exel.php on line 32
+[05-Aug-2014 11:49:30 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/www4gsho/public_html/admin/exel.php:25) in /home/www4gsho/public_html/admin/exel.php on line 33
+[05-Aug-2014 11:49:30 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/www4gsho/public_html/admin/exel.php:36
+Stack trace:
+#0 /home/www4gsho/public_html/admin/exel.php(36): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home/www4gsho/public_html/admin/exel.php on line 36
+[07-Aug-2014 11:34:28 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/www4gsho/public_html/admin/exel.php:25) in /home/www4gsho/public_html/admin/exel.php on line 32
+[07-Aug-2014 11:34:28 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/www4gsho/public_html/admin/exel.php:25) in /home/www4gsho/public_html/admin/exel.php on line 33
+[07-Aug-2014 11:34:28 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/www4gsho/public_html/admin/exel.php:36
+Stack trace:
+#0 /home/www4gsho/public_html/admin/exel.php(36): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home/www4gsho/public_html/admin/exel.php on line 36
+[07-Aug-2014 11:34:44 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/www4gsho/public_html/admin/exel.php:25) in /home/www4gsho/public_html/admin/exel.php on line 32
+[07-Aug-2014 11:34:44 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/www4gsho/public_html/admin/exel.php:25) in /home/www4gsho/public_html/admin/exel.php on line 33
+[07-Aug-2014 11:34:44 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/www4gsho/public_html/admin/exel.php:36
+Stack trace:
+#0 /home/www4gsho/public_html/admin/exel.php(36): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home/www4gsho/public_html/admin/exel.php on line 36
+[07-Aug-2014 11:36:41 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/www4gsho/public_html/admin/exel.php:25) in /home/www4gsho/public_html/admin/exel.php on line 32
+[07-Aug-2014 11:36:41 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/www4gsho/public_html/admin/exel.php:25) in /home/www4gsho/public_html/admin/exel.php on line 33
+[07-Aug-2014 11:40:14 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/www4gsho/public_html/admin/exel.php:25) in /home/www4gsho/public_html/admin/exel.php on line 32
+[07-Aug-2014 11:40:14 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/www4gsho/public_html/admin/exel.php:25) in /home/www4gsho/public_html/admin/exel.php on line 33
+[07-Aug-2014 11:40:26 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/www4gsho/public_html/admin/exel.php:25) in /home/www4gsho/public_html/admin/exel.php on line 32
+[07-Aug-2014 11:40:26 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/www4gsho/public_html/admin/exel.php:25) in /home/www4gsho/public_html/admin/exel.php on line 33
+[07-Aug-2014 12:17:56 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/www4gsho/public_html/admin/exel.php:25) in /home/www4gsho/public_html/admin/exel.php on line 32
+[07-Aug-2014 12:17:56 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/www4gsho/public_html/admin/exel.php:25) in /home/www4gsho/public_html/admin/exel.php on line 33
+[07-Aug-2014 12:18:00 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/www4gsho/public_html/admin/exel.php:25) in /home/www4gsho/public_html/admin/exel.php on line 32
+[07-Aug-2014 12:18:00 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/www4gsho/public_html/admin/exel.php:25) in /home/www4gsho/public_html/admin/exel.php on line 33
+[15-Aug-2014 06:11:39 America/Chicago] PHP Warning:  Creating default object from empty value in /home/www4gsho/public_html/admin/product_edit.php on line 23
+[15-Aug-2014 06:13:08 America/Chicago] PHP Warning:  Creating default object from empty value in /home/www4gsho/public_html/admin/product_edit.php on line 23

@@ -123,7 +123,7 @@
 </td></tr>
 <tr rowspan=5><td colspan=2>
 <p>
-Please ensure everything here is correct, after proceeding forward, your cart will be transferred to an order and no further items will be able to be placed on the order. To pay via direct deposit, please call 1300 113 680 or email info@leatherbag.com.au to place your order.
+Please ensure everything here is correct, after proceeding forward, your cart will be transferred to an order and no further items will be able to be placed on the order. To pay via direct deposit, please call +8801955534302-10 or email sales@4gshopping.com to place your order.
 </p>
 </td></tr>
 <tr><td>

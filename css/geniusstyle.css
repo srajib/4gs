@@ -37,10 +37,20 @@ body{background-color:#fff; font-family:Arial} /* background-image:url(../images
 #leftcontent1{float:left; width:270px; height:auto; background-color:#fff; border:1px solid #DDD;}
 .leftcat1list1{padding:8px 8px 8px 16px; background:#E7E7E7; color:#333; border-bottom:1px solid #CCC;}
 
+.leftcatlist{padding:0 0 10px 4px}
+.leftcatlist a{text-decoration:none; color:#333}
+.leftcatlist a:hover{text-decoration:underline; color:#000}
+
 #rightcontent{float:right; width:700px; height:auto; background-color:#fff; border:1px solid #DDD;}
 
 #rightcontent1{float:right; width:700px; margin: 0 0 15px 0; padding:0 0 10px 0; background-color:#fff; border:1px solid #DDD;}
 #rightcontent2{float:right; margin:0; padding:0 0 10px 0; width:700px; padding:0 0 10px 0;background-color:#fff; border:1px solid #DDD;}
+#rightcontent3{float:right; width:700px; margin: 0 0 15px 0; padding:0 0 10px 0; background-color:#fff; border:0px solid #DDD;}
+
+.catarea{float:left; margin:0 27px 0 3px; width:202px; height:300px; text-align:center; color:#333}
+.catarea img{width:196px; height:234px; border:3px solid #EEE; margin-bottom:7px}
+.catarea img a{border:3px solid #EEE}
+.catarea a{text-decoration:none; text-align:center; color:#555;}
 
 .cat1detailstitle{float:left; margin:10px 0 0 8px; width:680px; height:px; padding:5px 0; font-size:13px; font-weight:bold; color:#333; background-color:#EEE; border:1px solid #DDD}
 
@@ -91,10 +101,10 @@ border-right:1px solid #DDD; border-bottom:1px solid #DDD; border-left:1px solid
 .aboutuscontent{margin:20px; font-size:14px; text-align:justify}
 .heading7{margin-top:22px; color:blue; font-size:16px; font-weight:bold}
 
-#availability_status {
-	font-size:11px;
-	margin-left:10px;
-}
+.heading6{padding:20px 0 10px 75px; font-size:24px; color:#991C9F;} /* #811787 */
+.contact6{padding:0 0 10px 105px; width:auto; height:auto; line-height:25px; border:0px solid #777}
+
+#availability_status {font-size:11px; margin-left:10px;}
 
 #product1{float:left; padding:10px; margin:20px 0 0 15px; width:160px; height:230px; font-size:13px; border:1px solid #CCC; overflow:hidden}
 #product1 img{height:140px; margin-bottom:5px}
@@ -108,6 +118,8 @@ border-right:1px solid #DDD; border-bottom:1px solid #DDD; border-left:1px solid
 
 #hitcounter{float:left; margin:55px 0 0 0; width:990px; height:;}
 
-#footer{float:left; margin:35px 0 45px 0; width:990px; height:; padding:15px 0; background-color:#D5D5D5; color:#333; font-size:13px; text-align:center;}
-#footer a{text-decoration:none; color:#333}
-#footer a:hover{text-decoration:underline; color:#555}
+#footer{float:left; margin:35px 0 45px 0; width:990px; height:99px; background-color:#EEE; color:#fff; font-size:12px; text-align:center; background-image:url(../images/greener.png);}
+#footer a{text-decoration:none; color:#fff}
+#footer a:hover{text-decoration:underline; color:yellow}
+
+#footer11{float:left; margin:35px 0 45px 315px; width:360px; height:110px; background-color:#EEE; color:#fff; font-size:12px; text-align:center; background-image:url(../images/footer-11.png);}
