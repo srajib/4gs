@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Aug 04, 2014 at 12:04 AM
+-- Generation Time: Sep 05, 2014 at 01:14 AM
 -- Server version: 5.5.37
 -- PHP Version: 5.4.23
 
@@ -132,7 +132,7 @@ CREATE TABLE IF NOT EXISTS `cat1` (
   `is_published` enum('1','0') NOT NULL DEFAULT '0',
   PRIMARY KEY (`cat1_id`),
   UNIQUE KEY `cat1_name` (`cat1_name`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=44 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=60 ;
 
 --
 -- Dumping data for table `cat1`
@@ -145,16 +145,30 @@ INSERT INTO `cat1` (`cat1_id`, `cat1_name`, `cat1_details`, `cat1_photo`, `statu
 (29, 'Canon Copier', 'PRINTER, PHOTOCOPPIER', 'cannon-coppier.jpg', 1, '1'),
 (30, 'HP Printer', '', 'hp-printer.jpg', 1, '1'),
 (31, 'Toshiba Copier', '', 'toshiba-coppier.jpg', 1, '1'),
-(13, 'All Kinds of Security Solution', 'a.	CCTV Camera, \r\nb.	DVR\r\nc.	DVR Card\r\nd.	Access Control\r\ne.	Time Attendance\r\nf.	Metal Detector\r\ng.	Anti-Virus Solution\r\nh.	PABX System\r\n', 'security-solution.jpg', 1, '0'),
-(14, 'All Kinds of Power Solution', 'a.	UPS (Online & Offline)\r\nb.	IPS\r\nc.	Voltage Stabilizer\r\nd.	Battery\r\n', 'power.jpg', 1, '0'),
-(16, 'All Kinds of Medical Equipment', '', 'medical.jpg', 1, '0'),
-(17, 'Tablet PC', '', 'tabletpc.jpg', 1, '0'),
+(13, 'Security Solution', 'a.	CCTV Camera, \r\nb.	DVR\r\nc.	DVR Card\r\nd.	Access Control\r\ne.	Time Attendance\r\nf.	Metal Detector\r\ng.	Anti-Virus Solution\r\nh.	PABX System\r\n', 'security-solution.jpg', 1, '0'),
+(14, 'Power Solution', 'a.	UPS (Online & Offline)\r\nb.	IPS\r\nc.	Voltage Stabilizer\r\nd.	Battery\r\n', 'power.jpg', 1, '0'),
+(45, 'Computer & Server', '', 'computer-server.jpg', 1, '0'),
+(16, 'Medical Equipments', '', 'medical.jpg', 1, '0'),
+(17, 'Notebook & Tablet', '', 'tabletpc.jpg', 1, '0'),
+(46, 'Computer Accessories', '', 'computer-accessories.jpg', 1, '0'),
 (18, 'Agro Products', '', 'agro.jpg', 1, '0'),
-(19, 'All Kinds of Customize Software Solution', '', 'software-solutions.jpg', 1, '0'),
-(20, 'All Kinds of Printing Solution', '', 'printing-solution.jpg', 1, '0'),
-(21, 'All Kinds of Imaging Solution', '', 'imaging-solution.jpg', 1, '0'),
-(22, 'All Kinds of Office Stationary Solution', '', 'stationary.jpg', 1, '0'),
-(43, 'Accessories', 'Computer, Electrical, Electronics, etc Accessories', '', 1, '0');
+(19, 'Software Solutions', '', 'software-solutions.jpg', 1, '0'),
+(20, 'Paper & Printing Solution', '', 'printing-solution.jpg', 1, '0'),
+(21, 'Imaging Solution', '', 'imaging-solution.jpg', 1, '0'),
+(22, 'Office Stationary Solution', '', 'stationary.jpg', 1, '0'),
+(43, 'Accessories', 'Computer, Electrical, Electronics, etc Accessories', 'accessories.jpg', 1, '0'),
+(47, 'Notebook & Tablets', '', 'notebook-tablet.jpg', 1, '0'),
+(48, 'Printer & Photocopier', '', 'printer-photocopier.jpg', 1, '0'),
+(49, 'Toner Cartridges', '', 'toner-cartridges.jpg', 1, '0'),
+(50, 'Digital Camera', '', 'digital-camera.jpg', 1, '0'),
+(51, 'Antivirus Software', '', 'antivirus-software.jpg', 1, '0'),
+(52, 'Security Solution (CCTV)', '', 'security-solutions.jpg', 1, '0'),
+(53, 'IPS & UPS', '', 'ips-ups.jpg', 1, '0'),
+(54, 'Network Accessories', '', 'network-accessories.jpg', 1, '0'),
+(55, 'Scanner & Projector', '', 'scanner-projector.jpg', 1, '0'),
+(56, 'Medicals Equipments', '', 'medical.jpg', 1, '0'),
+(57, 'Stationery & Office Utensils', '', 'stationeries.jpg', 1, '0'),
+(58, 'Paper & Printing Solutions', '', 'paper-printing.jpg', 1, '0');
 
 -- --------------------------------------------------------
 
@@ -172,7 +186,7 @@ CREATE TABLE IF NOT EXISTS `cat2` (
   `is_published` enum('1','0') NOT NULL DEFAULT '0',
   PRIMARY KEY (`cat2_id`),
   UNIQUE KEY `cat1_id` (`cat1_id`,`cat2_name`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=83 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=84 ;
 
 --
 -- Dumping data for table `cat2`
@@ -205,7 +219,8 @@ INSERT INTO `cat2` (`cat2_id`, `cat1_id`, `cat2_name`, `cat2_details`, `cat2_pho
 (79, 34, 'Voltage Stabilizer', '', '', 1, '0'),
 (80, 34, 'Battery', '', '', 1, '0'),
 (81, 37, '7" Genius Tablet PC', '', '', 1, '0'),
-(82, 43, 'Pen Drive', 'Different types, size, data store capabilities, etc functionality of Pen Drive', '', 1, '0');
+(82, 43, 'Pen Drive', 'Different types, size, data store capabilities, etc functionality of Pen Drive', '', 1, '0'),
+(83, 58, 'Ash Printer', '', '', 1, '0');
 
 -- --------------------------------------------------------
 
@@ -283,7 +298,7 @@ CREATE TABLE IF NOT EXISTS `members` (
   `authority` tinyint(4) NOT NULL,
   `status` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=34 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=43 ;
 
 --
 -- Dumping data for table `members`
@@ -302,9 +317,15 @@ INSERT INTO `members` (`id`, `fname`, `lname`, `username`, `email`, `phone`, `ad
 (23, 'Tahsin', 'Hasan', 'tahsin', 'tahsin@gmail.net', '98908', '98098098', '8980909', '98989', '17fbf402d3143a5729d33bc314fe2eea', '2014-07-03 08:44:15', '2014-07-03 08:44:15', 'tahsin', 2, 0, 1),
 (24, 'Afzalur', 'Rashid', 'afzal', 'afzal_01@yahoo.com', '+8801614099336', 'kafrul,dhaka', '01614099336', 'test', 'ac69f452dde0bf7211649df244615d56', '2014-07-03 10:28:10', '2014-07-03 10:28:10', 'afzal', 2, 0, 1),
 (32, 'Mohammod', 'Rohman', 'mosaddek', 'mdmkrahman@gmail.com', '878978', '0-787897', '789789', '78798', '8b39b789c52da6b1e4263382665cc2af', '2014-07-24 10:33:32', '2014-07-24 10:33:32', 'mosaddek', 2, 0, 1),
-(30, 'Raju', 'Khan', 'rajib', 'rajib1111@gmail.com', '89809', '8098098', '8098908', '89809', 'f516e4576732785a68cb09745ee82ba0', '2014-07-24 09:52:37', '2014-07-24 09:52:37', 'rajib', 2, 0, 1),
 (31, 'Mohammod', 'Mosaddek', 'mdmkrahman', 'mdmkrahman@yahoo.com', '989', '989', '898098', '980', 'bbe5a16148d936fae3ef59f851b9ff5a', '2014-07-24 10:30:06', '2014-07-24 10:30:06', 'mdmkrahman', 2, 0, 1),
-(33, 'Mohammod', 'Mosaddek', 'rohman', 'mdmkrahman@hotmail.com', '89789798', '01987897', '78798', '789798', '645805520cb21bd36957edeb7d9c1742', '2014-08-01 11:03:03', '2014-08-01 11:03:03', 'rohman', 2, 0, 0);
+(33, 'Mohammod', 'Mosaddek', 'rohman', 'mdmkrahman@hotmail.com', '89789798', '01987897', '78798', '789798', '645805520cb21bd36957edeb7d9c1742', '2014-08-01 11:03:03', '2014-08-01 11:03:03', 'rohman', 2, 0, 0),
+(35, 'Rajib', 'Khan', 'rajib', 'rajib1111@gmail.com', '+8801913512650', '900 W Hatirpul+', 'nai-0989087', 'null', 'f516e4576732785a68cb09745ee82ba0', '2014-08-05 08:14:12', '2014-08-05 08:14:12', 'rajib', 2, 0, 1),
+(37, 'Web', 'Tech', 'webtech', 'webtechnologybangladesh@gmail.com', '666', '777', '888', '999', '47a0c428e6b66954e75c44e30e657264', '2014-08-05 09:52:36', '2014-08-05 09:52:36', 'webtech', 2, 0, 1),
+(38, 'Afzalur', 'Rashid', 'mdafzalur', 'afzal@progoti.com', '+8801614099336', '29A/15, Pallabi R/A', '01614099336', 'test', 'ac69f452dde0bf7211649df244615d56', '2014-08-05 11:25:54', '2014-08-05 11:25:54', 'mdafzalur', 2, 0, 1),
+(39, 'abu', 'kawsar', 'litu', 'ak_litu@yahoo.com', '01818078177', '713 W Sherapara', '876', '', '970de1884dd7b2902fac81118d55d718', '2014-08-07 11:58:18', '2014-08-07 11:58:18', 'litu', 2, 0, 0),
+(40, 'Moynul', 'Islam', 'mmigbd', 'mmigbd@yahoo.com', '01713290869', 'Solua, Solua Bazar, Chowgacha, Jessore', '01713290869', '', 'b161118ec40276a74aad136a56f16987', '2014-08-12 01:07:03', '2014-08-12 01:07:03', 'mmigbd', 2, 0, 1),
+(41, 'Mahmudur', 'Rahman', 'arif', 'mrarif75@gmail.com', '01615621821', 'Dhaka Trade centre', '01819520009', '', 'b161118ec40276a74aad136a56f16987', '2014-08-14 05:52:10', '2014-08-14 05:52:10', 'arif', 2, 0, 1),
+(42, 'GM', 'Murad', 'muradmin', 'gmmurad99@gmail.com', '01922334445582923', 'Kwranbazar', '0940382', 'Dhaka', '587a7e599e7c7c1db9fe2d5bcca27072', '2014-08-22 11:18:18', '2014-08-22 11:18:18', 'muradmin', 2, 6, 1);
 
 -- --------------------------------------------------------
 
@@ -328,7 +349,7 @@ INSERT INTO `menu` (`menu_id`, `menu_link`, `menu_name`, `menu_details`) VALUES
 (1, 'index.php', 'Home', ''),
 (2, 'about.php', 'About Us', ''),
 (3, 'product_list.php', 'Products ', ''),
-(4, 'new_arrivals.php', 'Gallery ', ''),
+(4, 'gallery.php', 'Gallery ', ''),
 (5, 'resources.php', 'Corporate Relation', ''),
 (6, 'specials.php', 'Career ', ''),
 (7, 'contact.php', 'Contact Us', '');
@@ -414,7 +435,7 @@ CREATE TABLE IF NOT EXISTS `order_details` (
   PRIMARY KEY (`ord_details_id`),
   KEY `pay_id` (`pay_id`),
   KEY `pay_status` (`pay_status`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=189 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=225 ;
 
 --
 -- Dumping data for table `order_details`
@@ -520,7 +541,43 @@ INSERT INTO `order_details` (`ord_details_id`, `ord_id`, `pay_id`, `product_name
 (185, 94, NULL, 'HP LaserJet Toner Cartridge', 10800, '12', '', '', '2014-08-02 12:12:09', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
 (186, 95, NULL, 'Genius TN 3250', 2300, '19', '', '', '2014-08-02 19:00:45', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
 (187, 95, NULL, 'Genius HL 2140', 2300, '13', '', '', '2014-08-02 19:00:45', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
-(188, 95, NULL, 'Genius 2330', 2300, '11', '', '', '2014-08-02 19:00:45', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0);
+(188, 95, NULL, 'Genius 2330', 2300, '11', '', '', '2014-08-02 19:00:45', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(189, 96, NULL, 'Genius 1130', 2300, '1', '', '', '2014-08-04 14:44:45', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(190, 97, NULL, 'Genius HL 2140', 2300, '11', '', '', '2014-08-05 13:02:07', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(191, 97, NULL, 'Canon Original INK ', 850, '12', '', '', '2014-08-05 13:02:07', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(192, 97, NULL, 'HP LaserJet Toner Cartridge', 7150, '15', '', '', '2014-08-05 13:02:07', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(193, 98, NULL, 'Genius HL 2140', 2300, '19', '', '', '2014-08-05 13:27:59', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(194, 98, NULL, 'Canon Original INK ', 1300, '10', '', '', '2014-08-05 13:27:59', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(195, 99, NULL, 'Genius HL 2140', 2300, '19', '', '', '2014-08-05 13:36:25', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(196, 99, NULL, 'Canon Original INK ', 1300, '10', '', '', '2014-08-05 13:36:25', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(197, 100, NULL, 'HP LaserJet Toner Cartridge', 5600, '1', '', '', '2014-08-05 16:27:48', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(198, 101, NULL, 'Canon Original INK ', 850, '18', '', '', '2014-08-07 16:58:50', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(199, 101, NULL, 'Genius 1130', 2300, '7', '', '', '2014-08-07 16:58:50', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(200, 102, NULL, 'Genius TN-2060', 2300, '2', '', '', '2014-08-12 06:07:21', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(201, 103, NULL, 'Genius 2330', 2300, '3', '', '', '2014-08-12 13:46:45', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(202, 103, NULL, 'Genius M1200', 2300, '2', '', '', '2014-08-12 13:46:46', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(203, 103, NULL, 'TOSHIBA e-STUDIO COPIER', 420000, '1', '', '', '2014-08-12 13:46:46', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(204, 104, NULL, 'Genius 2330', 2300, '3', '', '', '2014-08-12 13:49:47', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(205, 104, NULL, 'Genius M1200', 2300, '2', '', '', '2014-08-12 13:49:47', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(206, 104, NULL, 'TOSHIBA e-STUDIO COPIER', 420000, '1', '', '', '2014-08-12 13:49:47', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(207, 105, NULL, 'Genius 2330', 2300, '3', '', '', '2014-08-12 14:01:41', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(208, 105, NULL, 'Genius M1200', 2300, '2', '', '', '2014-08-12 14:01:41', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(209, 105, NULL, 'TOSHIBA e-STUDIO COPIER', 420000, '1', '', '', '2014-08-12 14:01:41', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(210, 106, NULL, 'Genius 2330', 2300, '3', '', '', '2014-08-12 14:04:41', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(211, 106, NULL, 'Genius M1200', 2300, '2', '', '', '2014-08-12 14:04:41', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(212, 106, NULL, 'TOSHIBA e-STUDIO COPIER', 420000, '2', '', '', '2014-08-12 14:04:41', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(213, 107, NULL, 'TOSHIBA e-STUDIO COPIER', 420000, '1', '', '', '2014-08-12 14:50:05', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(214, 108, NULL, 'TOSHIBA e-STUDIO COPIER', 420000, '1', '', '', '2014-08-12 14:51:10', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(215, 109, NULL, 'TOSHIBA e-STUDIO COPIER', 420000, '3', '', '', '2014-08-14 12:30:16', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(216, 110, NULL, 'TOSHIBA e-STUDIO COPIER', 420000, '3', '', '', '2014-08-14 12:31:27', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(217, 111, NULL, 'Genius TN 3250', 2300, '14', '', '', '2014-08-15 11:34:06', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(218, 111, NULL, 'Canon Original Toner', 6500, '13', '', '', '2014-08-15 11:34:06', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(219, 112, NULL, 'Genius TN 3250', 2300, '14', '', '', '2014-08-15 11:39:16', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(220, 112, NULL, 'Canon Original Toner', 6500, '13', '', '', '2014-08-15 11:39:16', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(221, 113, NULL, 'HP Original INK Cartridge', 1400, '1', '', '', '2014-08-15 12:15:29', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(222, 114, NULL, 'HP Original INK Cartridge', 1400, '1', '', '', '2014-08-15 12:17:10', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(223, 115, NULL, 'HP Original INK Cartridge', 1400, '1', '', '', '2014-08-15 12:17:31', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0),
+(224, 116, NULL, 'HP Original INK Cartridge', 1400, '1', '', '', '2014-08-15 12:17:39', 0, 0, 0, 0, 0, 0, NULL, '', 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -557,7 +614,7 @@ CREATE TABLE IF NOT EXISTS `order_list` (
   PRIMARY KEY (`ord_id`),
   KEY `pay_id` (`pay_id`,`uemail`),
   KEY `pay_status` (`pay_status`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=96 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=117 ;
 
 --
 -- Dumping data for table `order_list`
@@ -599,7 +656,28 @@ INSERT INTO `order_list` (`ord_id`, `pay_id`, `product_name`, `price`, `quantity
 (92, NULL, '', 0, '', 'rohman', '', '', NULL, NULL, '2014-08-02 11:47:48', 0, 0, 0, 0, 0, 0, NULL, '', 142140, 142140, 0, 'bKash', 0, 0),
 (93, NULL, '', 0, '', 'rohman', '', '', NULL, NULL, '2014-08-02 11:48:38', 0, 0, 0, 0, 0, 0, NULL, '', 142140, 142140, 0, 'bKash', 0, 0),
 (94, NULL, '', 0, '', 'rohman', '', '', NULL, NULL, '2014-08-02 12:12:09', 0, 0, 0, 0, 0, 0, NULL, '', 142140, 142140, 0, 'bKash', 0, 0),
-(95, NULL, '', 0, '', 'rohman', '', '', NULL, NULL, '2014-08-02 19:00:45', 0, 0, 0, 0, 0, 0, NULL, '', 98900, 98900, 0, 'bKash', 0, 0);
+(95, NULL, '', 0, '', 'rohman', '', '', NULL, NULL, '2014-08-02 19:00:45', 0, 0, 0, 0, 0, 0, NULL, '', 98900, 98900, 0, 'bKash', 0, 0),
+(96, NULL, '', 0, '', 'afzal', '', '', NULL, NULL, '2014-08-04 14:44:45', 0, 0, 0, 0, 0, 0, NULL, '', 2300, 2300, 0, 'bKash', 0, 0),
+(97, NULL, '', 0, '', 'rajib', '', '', NULL, NULL, '2014-08-05 13:02:07', 0, 0, 0, 0, 0, 0, NULL, '', 142750, 142750, 0, 'bKash', 0, 0),
+(98, NULL, '', 0, '', 'rajib', '', '', NULL, NULL, '2014-08-05 13:27:59', 0, 0, 0, 0, 0, 0, NULL, '', 56700, 56700, 0, 'bKash', 0, 0),
+(99, NULL, '', 0, '', 'rajib', '', '', NULL, NULL, '2014-08-05 13:36:25', 0, 0, 0, 0, 0, 0, NULL, '', 56700, 56700, 0, 'bKash', 0, 0),
+(100, NULL, '', 0, '', 'mdafzalur', '', '', NULL, NULL, '2014-08-05 16:34:52', 0, 0, 0, 0, 0, 0, NULL, '', 5600, 5600, 0, 'bKash', 7, 0),
+(101, NULL, '', 0, '', 'litu', '', '', NULL, NULL, '2014-08-07 17:15:12', 0, 0, 0, 0, 0, 0, NULL, '', 31400, 31400, 0, 'bKash', 6, 0),
+(102, NULL, '', 0, '', 'mmigbd', '', '', NULL, NULL, '2014-08-12 06:07:21', 0, 0, 0, 0, 0, 0, NULL, '', 4600, 4600, 0, 'bKash', 0, 0),
+(103, NULL, '', 0, '', 'mmigbd', '', '', NULL, NULL, '2014-08-12 13:46:45', 0, 0, 0, 0, 0, 0, NULL, '', 431500, 431500, 0, 'bKash', 0, 0),
+(104, NULL, '', 0, '', 'mmigbd', '', '', NULL, NULL, '2014-08-12 13:49:47', 0, 0, 0, 0, 0, 0, NULL, '', 431500, 431500, 0, 'bKash', 0, 0),
+(105, NULL, '', 0, '', 'mmigbd', '', '', NULL, NULL, '2014-08-12 14:01:41', 0, 0, 0, 0, 0, 0, NULL, '', 431500, 431500, 0, 'bKash', 0, 0),
+(106, NULL, '', 0, '', 'mmigbd', '', '', NULL, NULL, '2014-08-12 14:04:41', 0, 0, 0, 0, 0, 0, NULL, '', 851500, 851500, 0, 'bKash', 0, 0),
+(107, NULL, '', 0, '', 'mmigbd', '', '', NULL, NULL, '2014-08-12 14:50:05', 0, 0, 0, 0, 0, 0, NULL, '', 420000, 420000, 0, 'bKash', 0, 0),
+(108, NULL, '', 0, '', 'mmigbd', '', '', NULL, NULL, '2014-08-12 14:51:10', 0, 0, 0, 0, 0, 0, NULL, '', 420000, 420000, 0, 'PayPal', 0, 0),
+(109, NULL, '', 0, '', 'arif', '', '', NULL, NULL, '2014-08-14 12:30:16', 0, 0, 0, 0, 0, 0, NULL, '', 1260000, 1260000, 0, 'bKash', 0, 0),
+(110, NULL, '', 0, '', 'arif', '', '', NULL, NULL, '2014-08-14 12:31:27', 0, 0, 0, 0, 0, 0, NULL, '', 1260000, 1260000, 0, 'bKash', 0, 0),
+(111, NULL, '', 0, '', 'mosaddek', '', '', NULL, NULL, '2014-08-15 11:34:06', 0, 0, 0, 0, 0, 0, NULL, '', 116700, 116700, 0, 'bKash', 0, 0),
+(112, NULL, '', 0, '', 'mosaddek', '', '', NULL, NULL, '2014-08-15 11:39:16', 0, 0, 0, 0, 0, 0, NULL, '', 116700, 116700, 0, 'bKash', 0, 0),
+(113, NULL, '', 0, '', 'mmigbd', '', '', NULL, NULL, '2014-08-15 12:15:29', 0, 0, 0, 0, 0, 0, NULL, '', 1400, 1400, 0, 'bKash', 0, 0),
+(114, NULL, '', 0, '', 'mmigbd', '', '', NULL, NULL, '2014-08-15 12:17:10', 0, 0, 0, 0, 0, 0, NULL, '', 1400, 1400, 0, 'bKash', 0, 0),
+(115, NULL, '', 0, '', 'mmigbd', '', '', NULL, NULL, '2014-08-15 12:17:31', 0, 0, 0, 0, 0, 0, NULL, '', 1400, 1400, 0, 'bKash', 0, 0),
+(116, NULL, '', 0, '', 'mmigbd', '', '', NULL, NULL, '2014-08-15 12:17:39', 0, 0, 0, 0, 0, 0, NULL, '', 1400, 1400, 0, 'PayPal', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -648,7 +726,7 @@ CREATE TABLE IF NOT EXISTS `picture` (
   `location` text NOT NULL,
   `location2` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=368 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=371 ;
 
 --
 -- Dumping data for table `picture`
@@ -877,7 +955,8 @@ INSERT INTO `picture` (`id`, `unique_id`, `location`, `location2`) VALUES
 (364, '1406280788', 'product/364.jpg', ''),
 (365, '1406280788', 'product/365.jpg', ''),
 (366, '1406280788', 'product/366.jpg', ''),
-(367, '1406280788', 'product/367.jpg', '');
+(367, '1406280788', 'product/367.jpg', ''),
+(369, '1408100938', 'product/368.jpg', '');
 
 -- --------------------------------------------------------
 
@@ -907,7 +986,7 @@ CREATE TABLE IF NOT EXISTS `product` (
   `feature` int(11) NOT NULL DEFAULT '0',
   `uploader_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=334 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=336 ;
 
 --
 -- Dumping data for table `product`
